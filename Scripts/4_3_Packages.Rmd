@@ -1,0 +1,15 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+### group_by ve summarise fonksiyonları
+
+Veriyi gruplama ve özet çıkarmak için bu fonksiyonları kullanabiliriz
+
+```{r}
+data("mtcars")
+library(dplyr)
+mt2 <- group_by(mtcars,cyl)
+mt2
+```
